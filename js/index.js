@@ -64,7 +64,7 @@ function char1() {
 }
 
 function char2() {
-    var myChart = echarts.init(document.getElementById("char2"), null, { width: '370px', height: '250px' });
+    var myChart = echarts.init(document.getElementById("char2"));
 
     var option = {
         tooltip: {
@@ -72,34 +72,16 @@ function char2() {
             axisPointer: {
                 type: "shadow",
             },
+            formatter: function (params) {
+                var tar = params[0];
+                return tar.name + "<br/>" + tar.seriesName + " : " + tar.value;
+            },
         },
         grid: {
             show: true,
             borderWidth: 0,
         },
-        legend: {
-            data: ["正常", "GPS异常", "角度倾斜", "检波器异常"],
-            textStyle: {
-                color: "#ffffff",
-            },
-        },
         xAxis: {
-            type: "value",
-            axisLabel: {
-                show: true,
-                textStyle: {
-                    color: "#fff",
-                },
-            },
-            splitLine: {
-                lineStyle: {
-                    color: ["#f2f2f2"],
-                    width: 0,
-                    type: "solid",
-                },
-            },
-        },
-        yAxis: {
             type: "category",
             data: ["正常", "GPS异常", "角度倾斜", "检波器异常"],
             axisLabel: {
@@ -115,6 +97,23 @@ function char2() {
                 },
             },
         },
+        yAxis: {
+            type: "value",
+            axisLabel: {
+                show: true,
+                textStyle: {
+                    color: "#fff",
+                },
+            },
+            splitLine: {
+                lineStyle: {
+                    color: ["#f2f2f2"],
+                    width: 0,
+                    type: "solid",
+                },
+            },
+        },
+        
         series: [
             {
                 name: "数量",
@@ -124,11 +123,11 @@ function char2() {
                     normal: {
                         label: {
                             show: true,
-                            position: "insideRight",
+                            position: "inside",
                         },
                     },
                 },
-                data: [320, 302, 301, 334],
+                data: [320, 31, 13, 14],
             },
         ],
     };

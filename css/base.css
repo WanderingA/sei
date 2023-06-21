@@ -279,7 +279,7 @@ a:hover{
     width: 98%;
     margin-left: 1%;
     margin-bottom: 25px;
-    height: 610px;
+    height: 1000px;
     
 }
 .node_any {
@@ -305,6 +305,7 @@ a:hover{
 
 .node_any02 {
     width: 48%;
+    height: 800px;
     margin-right: 2%;
 }
 .div_any03{
@@ -322,7 +323,7 @@ a:hover{
     border: 1px solid #034c6a;
     box-sizing: border-box;
     position: relative;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 .node_any_child {
     width: 102%;
@@ -372,7 +373,7 @@ a:hover{
 }
 #map_div{
     width: 96%;
-    height: 94%;
+    height: 90%;
 
 
     margin: 4% auto;
