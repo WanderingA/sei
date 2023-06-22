@@ -48,14 +48,22 @@
         </div>
         <div class="node_any02 left ">
             <div class="div_any_child div_height">
-                <div class="div_any_title any_title_width"><img src="img/title_3.png">命令设置 </div>
-                <div id="map_div"></div>
+                <div class="div_any_title any_title_width"><img src="img/title_3.png">波形</div>
+                <div id="char3" class="node_chart right"></div>
+                <div>
+                    
+                    <select id="selectSeismograph" onchange="changeSeismograph()">
+                        <option value="seismograph1">地震仪1</option>
+                        <option value="seismograph2">地震仪2</option>
+                        <option value="seismograph3">地震仪3</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div class="right node_any01">
             <div class="node_any_child">
-                <div class="div_any_title"><img src="img/title_4.png">当前状态 </div>
-                <p id="char3" class="p_chart chart_container"></p>
+                <div class="div_any_title"><img src="img/title_4.png">命令设置</div>
+                <p id="char4" class="p_chart chart_container"></p>
             </div>
             
         </div>
