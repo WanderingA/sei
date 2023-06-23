@@ -5,7 +5,7 @@
     <title>车辆监控</title>
     <link rel="stylesheet" href="css/base.css">
     <link href="css/zTreeStyle/zTreeStyle.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="js/bstable/css/bootstrap.min.css">
 </head>
 <style>
 
@@ -50,12 +50,54 @@
                 <div class="div_any_title any_title_width"><img src="img/title_3.png">波形</div>
                 <div id="char3" class="node_chart right"></div>
                 <div>
-                    
-                    <select id="selectSeismograph" onchange="changeSeismograph()">
-                        <option value="seismograph1">地震仪1</option>
-                        <option value="seismograph2">地震仪2</option>
-                        <option value="seismograph3">地震仪3</option>
-                    </select>
+                    <div class="p_node">
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 001</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 002</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 003</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 004</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 005</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 006</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 007</button>
+                    </div>
+                    <div class="p_node">
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 001</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 002</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 003</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 004</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 005</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 006</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 007</button>
+                    </div>
+                    <div class="p_node">
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 001</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 002</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 003</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 004</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 005</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 006</button>
+                        <button type="button" class="btn btn-primary btn-lg my_bb">node 007</button>
+                    </div>
+                    <div align="center">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination bg-secondary">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,6 +117,6 @@
 <script src="js/node_control.js"></script>
 <script src="js/ztree/jquery.ztree.all-3.5.js"></script>
 <script src="js/listTree.js"></script>
-
+<script src="/js/bstable/js/bootstrap.min.js"></script>
 </body>
 </html>

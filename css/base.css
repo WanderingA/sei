@@ -1028,3 +1028,41 @@ border-radius: 3px;
     border-bottom: 3px solid #4b8df8 !important;
     box-sizing: border-box;
 }
+
+.p_node{
+    padding: 10px 30px;
+}
+
+.my_bb{
+    margin-right: 9px;
+}
+
+
+/* 修改分页按键的颜色 */
+.pagination li a {
+    color: #FF0000;
+    /* 设置按键文字颜色 */
+    background-color: #FFFF00;
+    /* 设置按键背景颜色 */
+    border-color: #0000FF;
+    /* 设置按键边框颜色 */
+}
+
+.pagination li a:hover,
+.pagination li a:focus {
+    color: #FFFFFF;
+    /* 设置鼠标悬停或聚焦时的文字颜色 */
+    background-color: #0000FF;
+    /* 设置鼠标悬停或聚焦时的背景颜色 */
+    border-color: #00FF00;
+    /* 设置鼠标悬停或聚焦时的边框颜色 */
+}
+
+.pagination .active a {
+    color: #FFFFFF;
+    /* 设置当前活动页按键的文字颜色 */
+    background-color: #00FF00;
+    /* 设置当前活动页按键的背景颜色 */
+    border-color: #FF0000;
+    /* 设置当前活动页按键的边框颜色 */
+}
