@@ -7,6 +7,7 @@
     <link href="css/zTreeStyle/zTreeStyle.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="js/jQueryPage/src/jquery.page.css">
     <link rel="stylesheet" href="css/base.css">
+
 </head>
 <body>
 <!--顶部-->
@@ -50,21 +51,18 @@
     <!--右侧功能栏-->
     <div class="right map_right ">
         <div class="map_right_top">
-            <ul><li class="li_active">预警信息</li>
-                <li>信息搜索</li>
-                <!-- <li>专题信息</li> -->
+            <ul>
+                <li class="li_active">预警信息</li>
             </ul>
         </div>
         <div class="map_con">
             <div class="map_con_div" style="display: block" >
                 <div class="map_chart">
-
                     <p id="char1" class="p_chart"></p>
                 </div>
-                <div class="div_any_child">
-                    <!--<div class="div_any_title"><img src="img/title_4.png">行驶时长排名前5位 </div>-->
+                <div class="div_table_child">
                     <div class="table_p">
-                        <table>
+                        <table class="table-striped">
                             <thead><tr>
                                 <th>节点ID</th>
                                 <th>类别</th>
@@ -77,21 +75,35 @@
                             <tr><td>2</td><td>汽车</td><td>134.221</td><td>98.423</td></tr>
                             <tr><td>3</td><td>履带车</td><td>134.422</td><td>98.432</td></tr>
                             <tr><td>4</td><td>飞行器</td><td>134.123</td><td>98.414</td></tr>
+                            <tr><td>4</td><td>飞行器</td><td>134.123</td><td>98.414</td></tr>
+                            <tr><td>4</td><td>飞行器</td><td>134.123</td><td>98.414</td></tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
+                <div class="pagination-container text-center">
+                    <nav aria-label="Page navigation" class="mt-3">
+                      <ul class="pagination bg-secondary">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="map_con_div" >
-                <p>
-                    <input type="text" placeholder="输入关键字" class="carNo_input"><input type="button" class="find_but">
-                </p>
-                <!-- 补充搜索功能 -->
-            </div>
-            
-
         </div>
-
     </div>
 
 </div>
@@ -103,5 +115,6 @@
 <script src="js/map_control.js"></script>
 <script src="js/ztree/jquery.ztree.all-3.5.js"></script>
 <script src="js/listTree.js"></script>
+<script src="/js/bstable/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -24,7 +24,6 @@
     </div>
     <div class="right nav text_right">
         <ul> <li class="nav_active"><i class="nav_7"></i><a href="static.html">查询统计</a> </li>
-            <!-- <li><i class="nav_8"></i><a href="message.html">信息录入</a> </li> -->
             <li><i class="nav_4"></i><a href="table1.html">表格界面</a> </li>
         </ul>
     </div>
@@ -42,19 +41,19 @@
 <table>
     <tr>
         <td class="labe_td">总概：</td>
-        <td colspan="3" class="sky">拥有车辆数123456台，车辆整体情况比较良好，但违法纪律数也很多，应该着重改善驾驶人员交通法律法规教育！</td>
+        <td colspan="3" class="sky">拥有节点387台</td>
     </tr>
     <tr>
-        <td class="labe_td">新进车辆：</td>
-        <td>33987台</td>
-        <td class="labe_td">违法车辆：</td>
-        <td class="org">33987台</td>
+        <td class="labe_td">新增节点：</td>
+        <td>37台</td>
+        <td class="labe_td">故障节点：</td>
+        <td class="org">37台</td>
     </tr>
     <tr>
-        <td class="labe_td">报废车辆：</td>
-        <td class="red">33987台</td>
-        <td class="labe_td">报废车辆：</td>
-        <td>33987台</td>
+        <td class="labe_td">关机节点：</td>
+        <td class="red">3台</td>
+        <td class="labe_td">总节点：</td>
+        <td>387台</td>
     </tr>
 </table>
 
@@ -63,130 +62,128 @@
     <div class="static_top left">
         <i></i><span>统计分析一</span>
     </div>
-    <div class="div_any">
+    <div class="div_static_any">
         <div class="left div_any03">
             <div class="div_any_child01 left">
-                <div class="div_any_title"><img src="img/title_1.png">车辆类型统计 </div>
+                <div class="div_any_title"><img src="img/title_1.png">报警类型统计 </div>
                 <p id="char1" class="p_chart"></p>
                 <div class="char_table"><div class="table_p table_p01">
                     <table>
                         <thead><tr>
                             <th>排名</th>
-                            <th>车牌号</th>
-                            <th>里程数（km）</th>
+                            <th>类别</th>
+                            <th>数量</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                        <tr><td>1</td><td>人</td><td>231</td></tr>
+                        <tr><td>2</td><td>汽车</td><td>132</td></tr>
+                        <tr><td>3</td><td>履带车</td><td>13</td></tr>
+                        <tr><td>4</td><td>飞行器</td><td>3</td></tr>
                         </tbody>
                     </table>
                 </div></div>
 
             </div>
             <div class="div_any_child01 left">
-                <div class="div_any_title"><img src="img/title_2.png">车辆状态统计 </div>
+                <div class="div_any_title"><img src="img/title_2.png">节点状态统计 </div>
                 <p id="char2" class="p_chart"></p>
                 <div class="char_table"><div class="table_p table_p01">
                     <table>
                         <thead><tr>
-                            <th>排名</th>
-                            <th>车牌号</th>
-                            <th>里程数（km）</th>
+                            <th>序号</th>
+                            <th>状态</th>
+                            <th>异常原因</th>
+                            <th>数量</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                        <tr><td>1</td><td>正常</td><td>无异常</td><td>350</td></tr>
+                        <tr><td>2</td><td>异常</td><td>倾斜</td><td>3</td></tr>
+                        <tr><td>3</td><td>异常</td><td>GPS定位失败</td><td>5</td></tr>
+                        <tr><td>4</td><td>异常</td><td>电量过低</td><td>10</td></tr>
+                        <tr><td>5</td><td>异常</td><td>空间不足</td><td>0</td></tr>
                         </tbody>
                     </table>
                 </div></div>
             </div>
+        </div> 
+    </div>
+    <div class="static_top left">
+        <i></i><span>统计分析二</span>
+    </div>
+    <!-- <div class="right div_any03">
+        <div class="div_any_child01 left">
+            <div class="div_any_title"><img src="img/title_4.png">车辆行驶统计 </div>
+            <p id="char3" class="p_chart"></p>
+            <div class="char_table"><div class="table_p table_p01">
+                <table>
+                    <thead><tr>
+                        <th>排名</th>
+                        <th>车牌号</th>
+                        <th>里程数（km）</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    </tbody>
+                </table>
+            </div></div>
         </div>
-
-        <div class="static_top left">
-            <i></i><span>统计分析一</span>
-        </div>
-        <div class="right div_any03">
-            <div class="div_any_child01 left">
-                <div class="div_any_title"><img src="img/title_4.png">车辆行驶统计 </div>
-                <p id="char3" class="p_chart"></p>
-                <div class="char_table"><div class="table_p table_p01">
-                    <table>
-                        <thead><tr>
-                            <th>排名</th>
-                            <th>车牌号</th>
-                            <th>里程数（km）</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        </tbody>
-                    </table>
-                </div></div>
-            </div>
-            <div class="div_any_child01 left">
-                <div class="div_any_title"><img src="img/title_5.png">车辆报警统计 </div>
-                <p id="char4" class="p_chart"></p>
-                <div class="char_table"><div class="table_p table_p01">
-                    <table>
-                        <thead><tr>
-                            <th>排名</th>
-                            <th>车牌号</th>
-                            <th>里程数（km）</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        </tbody>
-                    </table>
-                </div></div>
-            </div>
-        </div>
-        <div class="static_top left">
-            <i></i><span>统计分析一</span>
-        </div>
-
-        <div class="right div_any03">
-
-            <div class="div_any_child01 left div_any_child01_wh">
-                <div class="div_any_title"><img src="img/title_5.png">车辆报警统计 </div>
-                <p id="char5" class="p_chart"></p>
-                <div class="char_table"><div class="table_p table_p01">
-                    <table>
-                        <thead><tr>
-                            <th>排名</th>
-                            <th>车牌号</th>
-                            <th>里程数（km）</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
-                        </tbody>
-                    </table>
-                </div></div>
-            </div>
+        <div class="div_any_child01 left">
+            <div class="div_any_title"><img src="img/title_5.png">车辆报警统计 </div>
+            <p id="char4" class="p_chart"></p>
+            <div class="char_table"><div class="table_p table_p01">
+                <table>
+                    <thead><tr>
+                        <th>排名</th>
+                        <th>车牌号</th>
+                        <th>里程数（km）</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    </tbody>
+                </table>
+            </div></div>
         </div>
     </div>
+    <div class="static_top left">
+        <i></i><span>统计分析三</span>
+    </div> -->
 
+    <div class="right div_any03">
+
+        <div class="div_any_child01 left div_any_child01_wh">
+            <div class="div_any_title"><img src="img/title_5.png">车辆报警统计 </div>
+            <p id="char3" class="p_chart"></p>
+            <div class="char_table"><div class="table_p table_p01">
+                <table>
+                    <thead><tr>
+                        <th>排名</th>
+                        <th>车牌号</th>
+                        <th>里程数（km）</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    <tr><td>1</td><td>京A12345</td><td>134.2</td></tr>
+                    </tbody>
+                </table>
+            </div></div>
+        </div>
+    </div>
 
 </div>
 <script src="js/jquery/jQuery-2.2.0.min.js"></script>
